@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
 <title>Clerk Mains</title>
 <style>
   :root {
@@ -149,7 +151,9 @@
 
     async function loadFiles() {
       try {
-        const res = await fetch(API_URL, {
+        // Always fetch a fresh file list (no browser/CDN cache)
+        const res = await fetch(API_URL + "?t=" + Date.now(), {
+          cache: "no-store",
           headers: { "Accept": "application/vnd.github+json" }
         });
         if (!res.ok) {
