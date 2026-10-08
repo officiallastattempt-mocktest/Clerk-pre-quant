@@ -6,92 +6,68 @@
 <title>Clerk Mains</title>
 <style>
   :root {
-    --bg: #f7f6f3;
-    --card-bg: #ffffff;
-    --border: #ddd8cd;
-    --text: #2b2a28;
-    --muted: #7a756c;
-    --accent: #3c5a4a;
-    --accent-light: #eef2ee;
+    --bg: #eef3f8;
+    --card: #ffffff;
+    --ink: #0f2236;
+    --side: #0b3d5c;
+    --sideink: #d6e8f5;
+    --acc: #ff7a1a;
+    --line: #dbe4ee;
+    --mut: #5d7186;
     box-sizing: border-box;
   }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background: var(--bg);
-    color: var(--text);
-    font-family: Georgia, 'Times New Roman', serif;
-    padding: 48px 20px;
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme=light]) {
+      --bg: #0d1621; --card: #16222f; --ink: #e8f0f7; --side: #08283d; --line: #263646; --mut: #8fa3b6;
+    }
   }
-  .wrap { width: 100%; max-width: 720px; margin: 0 auto; }
-  h1 {
-    font-size: 28px;
-    font-weight: 400;
-    margin: 0 0 6px;
-    text-align: center;
-  }
-  .subtitle {
-    text-align: center;
-    color: var(--muted);
-    font-size: 15px;
-    margin: 0 0 36px;
-  }
-  .crumb {
-    display: none;
-    align-items: center;
-    gap: 8px;
-    margin: 0 0 20px;
-    font-size: 15px;
-  }
-  .crumb button {
-    background: none;
-    border: none;
-    color: var(--accent);
-    font-family: Georgia, serif;
-    font-size: 15px;
-    cursor: pointer;
-    padding: 0;
-    text-decoration: underline;
-  }
-  .crumb.show { display: flex; }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .list { display: flex; flex-direction: column; gap: 14px; }
-  @media (max-width: 520px) {
-    .grid { grid-template-columns: 1fr; }
-  }
-  .card {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 22px 20px;
-    cursor: pointer;
-    color: var(--text);
-    text-decoration: none;
-    transition: border-color 0.15s ease, background 0.15s ease;
-  }
-  .card:hover { border-color: var(--accent); background: var(--accent-light); }
-  .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .folder-icon, .file-icon { flex: 0 0 auto; width: 34px; height: 30px; }
-  .folder-icon svg, .file-icon svg { width: 100%; height: 100%; display: block; }
-  .card-label { font-size: 18px; }
+  * { box-sizing: border-box; margin: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 
-  .status { text-align: center; color: var(--muted); font-size: 15px; padding: 40px 0; }
-  .spinner-wrap { display: flex; justify-content: center; padding: 30px 0 16px; }
-  .spinner {
-    width: 42px; height: 42px;
-    border-radius: 50%;
-    border: 3px solid var(--border);
-    border-top-color: var(--accent);
-    animation: spin 0.8s linear infinite;
+  #app { position: absolute; inset: 0; display: flex; }
+  @media (orientation: portrait) {
+    #app { inset: auto; top: 0; left: 100vw; width: 100vh; height: 100vw; transform-origin: top left; transform: rotate(90deg); }
   }
+
+  aside { width: 26%; max-width: 34vmin; background: var(--side); color: var(--sideink);
+    display: flex; flex-direction: column; gap: 1vmin;
+    padding: max(env(safe-area-inset-top), 2vmin) 2vmin 2vmin max(env(safe-area-inset-left), 2vmin); }
+  .brand { font-size: 3.6vmin; font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 2vmin; }
+  .brand span { color: var(--acc); }
+  .tag { padding: 1.6vmin 1.8vmin; border-radius: 10px; background: var(--acc); color: #fff; font-size: 2.6vmin; font-weight: 600; }
+  .tag small { display: block; font-size: 1.8vmin; font-weight: 400; opacity: .85; margin-top: .4vmin; }
+
+  .wrap { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow-y: auto;
+    padding: max(env(safe-area-inset-top), 2vmin) max(env(safe-area-inset-right), 3vmin) 2.4vmin 3vmin; }
+  h1 { font-size: 4.2vmin; }
+  .subtitle { color: var(--mut); font-size: 2.2vmin; margin: .6vmin 0 1.8vmin; }
+
+  .crumb { display: none; align-items: center; gap: 1vmin; margin: 0 0 2vmin; }
+  .crumb.show { display: flex; }
+  .crumb button { font: inherit; font-size: 2.2vmin; font-weight: 600; cursor: pointer; padding: 1.2vmin 2.2vmin;
+    border-radius: 99px; border: 1.5px solid var(--line); background: var(--card); color: var(--ink); }
+  .crumb button:hover { background: var(--ink); color: var(--bg); }
+
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2vmin; align-content: start; }
+  .list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2vmin; align-content: start; }
+  .grid:not(.hidden), .list:not(.hidden) { animation: f .25s; }
+  @keyframes f { from { opacity: 0; transform: translateX(1.5vmin); } }
+
+  .card { display: flex; align-items: center; gap: 2vmin; background: var(--card); border: 1px solid var(--line);
+    border-left: 1vmin solid var(--acc); border-radius: 12px; padding: 2.4vmin; cursor: pointer; color: var(--ink);
+    min-height: 14vmin; transition: .15s; }
+  .card:hover, .card:active { transform: translateY(-.5vmin); box-shadow: 0 8px 18px rgba(0,0,0,.12); }
+  .card:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; }
+  .folder-icon, .file-icon { flex: 0 0 auto; width: 6vmin; height: 5.4vmin; }
+  .folder-icon svg, .file-icon svg { width: 100%; height: 100%; display: block; }
+  .folder-icon svg path, .file-icon svg path { stroke: var(--acc); }
+  .card-label { font-size: 2.6vmin; font-weight: 700; }
+
+  .status { text-align: center; color: var(--mut); font-size: 2.2vmin; padding: 6vmin 0; }
+  .spinner-wrap { display: flex; justify-content: center; padding: 6vmin 0; }
+  .spinner { width: 7vmin; height: 7vmin; border-radius: 50%; border: 3px solid var(--line);
+    border-top-color: var(--acc); animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
   @media (prefers-reduced-motion: reduce) {
     .card { transition: none; }
@@ -102,19 +78,26 @@
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Clerk Mains</h1>
-    <p class="subtitle" id="subtitle">Choose a Quant section to continue</p>
+  <div id="app">
+    <aside>
+      <div class="brand">Last<span>Attempt</span></div>
+      <div class="tag">Clerk Mains<small>Quant</small></div>
+    </aside>
 
-    <div class="crumb" id="crumb">
-      <button id="backBtn">&larr; Back to folders</button>
+    <div class="wrap">
+      <h1>Clerk Mains</h1>
+      <p class="subtitle" id="subtitle">Choose a Quant section to continue</p>
+
+      <div class="crumb" id="crumb">
+        <button id="backBtn">&larr; Back to folders</button>
+      </div>
+
+      <div id="loading" class="spinner-wrap"><div class="spinner"></div></div>
+      <div id="errorBox" class="status hidden"></div>
+
+      <div id="folderView" class="grid hidden"></div>
+      <div id="fileView" class="list hidden"></div>
     </div>
-
-    <div id="loading" class="spinner-wrap"><div class="spinner"></div></div>
-    <div id="errorBox" class="status hidden"></div>
-
-    <div id="folderView" class="grid hidden"></div>
-    <div id="fileView" class="list hidden"></div>
   </div>
 
   <script>
