@@ -1,0 +1,70 @@
+const QUIZ_SETS = [
+  {
+    timer: 300,
+    instruction: "In the following question, two equations I and II are given. Solve both and mark the correct option.",
+    solutionImg: "",
+    solutionExp: "",
+    questions: [
+      {
+        q: "I) (x - 11)² - 106 = -30x<br>II) (y + 2)² - 22 = y",
+        opt: ["x < y", "Relationship between x and y cannot be determined", "x ≤ y", "x ≥ y", "x > y"],
+        ans: "B",
+        exp: "Solution<br>(x - 11)² - 106 = -30x<br>x² - 22x + 121 - 106 + 30x = 0<br>x² + 8x + 15 = 0<br>x² + 3x + 5x + 15 = 0<br>x(x + 3) + 5(x + 3) = 0<br>(x + 5)(x + 3) = 0<br>x = -5, -3<br><br>(y + 2)² - 22 = y<br>y² + 4y + 4 - 22 - y = 0<br>y² + 3y - 18 = 0<br>y² - 3y + 6y - 18 = 0<br>y(y - 3) + 6(y - 3) = 0<br>(y + 6)(y - 3) = 0<br>y = -6, 3<br><br>Comparing x and y: -3 < 3, but -3 > -6.<br>Hence, relationship between x and y cannot be established."
+      },
+      {
+        q: "I. 3x² + 35x + 98 = 0<br>II. 20y² + 90y + 100 = 0",
+        opt: ["x < y", "Relationship between x and y cannot be determined", "x ≤ y", "x ≥ y", "x > y"],
+        ans: "A",
+        exp: "Solution<br>3x² + 35x + 98 = 0<br>3x² + 21x + 14x + 98 = 0<br>3x(x + 7) + 14(x + 7) = 0<br>(3x + 14)(x + 7) = 0<br>x = -14/3, -7 = -4.6667, -7<br><br>20y² + 90y + 100 = 0<br>Take Common 10: 2y² + 9y + 10 = 0<br>2y² + 4y + 5y + 10 = 0<br>2y(y + 2) + 5(y + 2) = 0<br>(2y + 5)(y + 2) = 0<br>y = -5/2, -2 = -2.5, -2<br><br>Comparing x and y: every value of x (-4.6667, -7) is less than every value of y (-2.5, -2).<br>Hence, x < y."
+      },
+      {
+        q: "I) 2x² - 74x + 684 = 0<br>II) y² - 23y + 90 = 0",
+        opt: ["x > y", "x ≥ y", "x = y or relationship can't be determined.", "x < y", "x ≤ y"],
+        ans: "B",
+        exp: "Solution<br>2x² - 74x + 684 = 0<br>Take Common 2: x² - 37x + 342 = 0<br>x² - 18x - 19x + 342 = 0<br>x(x - 18) - 19(x - 18) = 0<br>(x - 19)(x - 18) = 0<br>x = 19, 18<br><br>y² - 23y + 90 = 0<br>y² - 5y - 18y + 90 = 0<br>y(y - 5) - 18(y - 5) = 0<br>(y - 18)(y - 5) = 0<br>y = 18, 5<br><br>Comparing x and y: every value of x (19, 18) is greater than or equal to every value of y (18, 5).<br>Hence, x ≥ y."
+      },
+      {
+        q: "I. 10x² - 200x + 510 = 0<br>II. y² - 41y + 420 = 0",
+        opt: ["x > y", "x ≥ y", "x = y or relationship can't be determined.", "x < y", "x ≤ y"],
+        ans: "D",
+        exp: "Solution<br>10x² - 200x + 510 = 0<br>Take Common 10: x² - 20x + 51 = 0<br>x² - 3x - 17x + 51 = 0<br>x(x - 3) - 17(x - 3) = 0<br>(x - 17)(x - 3) = 0<br>x = 17, 3<br><br>y² - 41y + 420 = 0<br>y² - 21y - 20y + 420 = 0<br>y(y - 21) - 20(y - 21) = 0<br>(y - 20)(y - 21) = 0<br>y = 20, 21<br><br>Comparing x and y: every value of x (17, 3) is less than every value of y (20, 21).<br>Hence, x < y."
+      },
+      {
+        q: "I. 2x² + 118x + 1740 = 0<br>II. y² + 4y - 621 = 0",
+        opt: ["x > y", "x ≥ y", "x < y", "x ≤ y", "x = y or relationship can't be determined."],
+        ans: "C",
+        exp: "Solution<br>2x² + 118x + 1740 = 0<br>Take Common 2: x² + 59x + 870 = 0<br>x² + 30x + 29x + 870 = 0<br>x(x + 30) + 29(x + 30) = 0<br>(x + 29)(x + 30) = 0<br>x = -29, -30<br><br>y² + 4y - 621 = 0<br>y² + 27y - 23y - 621 = 0<br>y(y + 27) - 23(y + 27) = 0<br>(y - 23)(y + 27) = 0<br>y = 23, -27<br><br>Comparing x and y: every value of x (-29, -30) is less than every value of y (23, -27).<br>Hence, x < y."
+      },
+      {
+        q: "I) 3x² - 35x + 102 = 0<br>II) 4y² - 60y + 216 = 0",
+        opt: ["x > y", "x ≥ y", "x = y or relationship can't be determined.", "x < y", "x ≤ y"],
+        ans: "E",
+        exp: "Solution<br>3x² - 35x + 102 = 0<br>3x² - 18x - 17x + 102 = 0<br>3x(x - 6) - 17(x - 6) = 0<br>(3x - 17)(x - 6) = 0<br>x = 17/3, 6 = 5.6667, 6<br><br>4y² - 60y + 216 = 0<br>Take Common 2: 2y² - 30y + 108 = 0<br>2y² - 12y - 18y + 108 = 0<br>2y(y - 6) - 18(y - 6) = 0<br>(2y - 18)(y - 6) = 0<br>y = 9, 6<br><br>Comparing x and y: every value of x (5.6667, 6) is less than or equal to every value of y (9, 6).<br>Hence, x ≤ y."
+      },
+      {
+        q: "I) x² + 18x + 72 = 0<br>II) 2y² - 4y - 70 = 0",
+        opt: ["x > y", "x ≥ y", "x < y", "x ≤ y", "x = y or relationship can't be determined."],
+        ans: "C",
+        exp: "Solution<br>x² + 18x + 72 = 0<br>x² + 6x + 12x + 72 = 0<br>x(x + 6) + 12(x + 6) = 0<br>(x + 12)(x + 6) = 0<br>x = -12, -6<br><br>2y² - 4y - 70 = 0<br>Take Common 2: y² - 2y - 35 = 0<br>y² + 5y - 7y - 35 = 0<br>y(y + 5) - 7(y + 5) = 0<br>(y - 7)(y + 5) = 0<br>y = 7, -5<br><br>Comparing x and y: every value of x (-12, -6) is less than every value of y (7, -5).<br>Hence, x < y."
+      },
+      {
+        q: "I) 6x² - 8x - 30 = 0<br>II) 8y² + 80y + 200 = 0",
+        opt: ["x > y", "x ≥ y", "x < y", "x ≤ y", "x = y or relationship can't be determined."],
+        ans: "A",
+        exp: "Solution<br>6x² - 8x - 30 = 0<br>Take Common 2: 3x² - 4x - 15 = 0<br>3x² - 9x + 5x - 15 = 0<br>3x(x - 3) + 5(x - 3) = 0<br>(3x + 5)(x - 3) = 0<br>x = -5/3, 3 = -1.6667, 3<br><br>8y² + 80y + 200 = 0<br>Take Common 2: 4y² + 40y + 100 = 0<br>4y² + 20y + 20y + 100 = 0<br>4y(y + 5) + 20(y + 5) = 0<br>(4y + 20)(y + 5) = 0<br>y = -5, -5<br><br>Comparing x and y: every value of x (-1.6667, 3) is greater than every value of y (-5).<br>Hence, x > y."
+      },
+      {
+        q: "I) 2x² + 2x - 4 = 0<br>II) 6y² - 84y + 270 = 0",
+        opt: ["x > y", "x ≥ y", "x = y or relationship can't be determined.", "x < y", "x ≤ y"],
+        ans: "D",
+        exp: "Solution<br>2x² + 2x - 4 = 0<br>Take Common 2: x² + x - 2 = 0<br>x² + 2x - x - 2 = 0<br>x(x + 2) - 1(x + 2) = 0<br>(x - 1)(x + 2) = 0<br>x = 1, -2<br><br>6y² - 84y + 270 = 0<br>Take Common 2: 3y² - 42y + 135 = 0<br>3y² - 27y - 15y + 135 = 0<br>3y(y - 9) - 15(y - 9) = 0<br>(3y - 15)(y - 9) = 0<br>y = 5, 9<br><br>Comparing x and y: every value of x (1, -2) is less than every value of y (5, 9).<br>Hence, x < y."
+      },
+      {
+        q: "I) 20x² - 40x + 20 = 0<br>II) 16y² - 32y + 16 = 0",
+        opt: ["x < y", "Relationship between x and y cannot be determined", "x ≤ y", "x ≥ y", "x > y"],
+        ans: "B",
+        exp: "Solution<br>20x² - 40x + 20 = 0<br>Take Common 10: 2x² - 4x + 2 = 0<br>2x² - 2x - 2x + 2 = 0<br>2x(x - 1) - 2(x - 1) = 0<br>(2x - 2)(x - 1) = 0<br>x = 1, 1<br><br>16y² - 32y + 16 = 0<br>Take Common 2: 8y² - 16y + 8 = 0<br>8y² - 8y - 8y + 8 = 0<br>8y(y - 1) - 8(y - 1) = 0<br>(8y - 8)(y - 1) = 0<br>y = 1, 1<br><br>Comparing x and y: x = 1 and y = 1.<br>Hence, x = y."
+      }
+    ]
+  }
+];
