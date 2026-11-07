@@ -312,64 +312,64 @@ const QUIZ_SETS = [
     solutionExp: "",
     questions: [
       {
-        q: "The average salary of each worker in a factory is Rs. 90. The average salary of 16 workers is Rs. 1185 and the average salary of the rest is Rs. 60. How many workers does the factory have?",
-        opt: ["588", "624", "600", "594", "618"],
+        q: "The average expenditure of Vivek from April to September is Rs. 10550 and he spent Rs. 1700 in April and Rs. 2378 in October. The average expenditure from May to October is?",
+        opt: ["10638", "10658", "10693", "10663", "10653"],
+        ans: "D",
+        exp: "Solution<br>The average expenditure of Vivek from April to September is Rs. 10550 and he spent Rs. 1700 in April and Rs. 2378 in October. The average expenditure from May to October is?<br>Total April to September = 10550 × 6 = 63300<br>Total May to September = 63300 - 1700 = 61600<br>Total May to October = 61600 + 2378 = 63978<br>Average = 63978 / 6 = 10663<br>? = 10663"
+      },
+      {
+        q: "A man purchases three items from a shop. He got one item gift wrapped for Rs 19. He paid a total of Rs 359 and shopkeeper made a profit of 11.11% on the cost price of all the three items together. The average cost price of the other two items is Rs 103. The gift item was sold at a profit of 10% after a discount of 16.67%. What is the marked price of gift wrapped item?",
+        opt: ["132", "156", "112", "148", "116"],
+        ans: "A",
+        exp: "Solution<br>A man purchases three items from a shop. He got one item gift wrapped for Rs 19. He paid a total of Rs 359 and shopkeeper made a profit of 11.11% on the cost price of all the three items together. The average cost price of the other two items is Rs 103. The gift item was sold at a profit of 10% after a discount of 16.67%. What is the marked price of gift wrapped item?<br>Total paid = 359, Selling price of three = 359 - 19 = 340<br>Profit 11.11% => SP = 10/9 × CP => CP of all three = 9/10 × 340 = 306<br>CP of other two = 103 × 2 = 206, CP of gift = 306 - 206 = 100<br>Sold at 10% profit => SP = 11/10 × 100 = 110<br>Sold after 16.67% discount => SP = 5/6 × MP => MP = 6/5 × 110 = Rs. 132<br>? = 132"
+      },
+      {
+        q: "The average of three number is 86. If another number is included the average becomes 82. If another number is included which is 2 more than 4th number replace the 1st number then average of four number becomes 92. Find the value of 1st number?",
+        opt: ["32", "44", "34", "36", "20"],
+        ans: "A",
+        exp: "Solution<br>The average of three number is 86. If another number is included the average becomes 82. If another number is included which is 2 more than 4th number replace the 1st number then average of four number becomes 92. Find the value of 1st number?<br>Let three numbers = a, b, c => a + b + c = 86 × 3 = 258<br>New number = d => a + b + c + d = 82 × 4 = 328 => d = 70<br>New number e = d + 2 = 72<br>b + c + d + e = 92 × 4 = 368 => b + c + 2d = 366<br>b + c = 366 - 140 = 226<br>a = 258 - 226 = 32<br>? = 32"
+      },
+      {
+        q: "The average weight of 40 employees in the office is 63.6 kg and the ratio of the men to women in the office is 2:3. If the average weight of the women in the office is 10% more than the average weight of the men in the same office, then find the average weight of women in the office?",
+        opt: ["66", "59", "64", "68", "69"],
+        ans: "A",
+        exp: "Solution<br>The average weight of 40 employees in the office is 63.6 kg and the ratio of the men to women in the office is 2:3. If the average weight of the women in the office is 10% more than the average weight of the men in the same office, then find the average weight of women in the office?<br>men = 2/5 × 40 = 16, women = 3/5 × 40 = 24<br>Let average of men = x, average of women = x × 110/100<br>16 × x + 24 × x × 110/100 = 63.6 × 40 = 2544<br>x = 60<br>Average of women = 60 × 110/100 = 66 kg<br>? = 66"
+      },
+      {
+        q: "The weight of Amit, Neha and Rohit in 2012 was in the ratio 4:5:6. In 2018 weight of Amit became 200%, weight of Neha increased by 40% and the weight of Rohit became 150% as compared to their weight in 2012. If the average increase in their weight is 12 kg, what is the difference between the weight of Amit in 2018 and the weight of Neha in 2012?",
+        opt: ["12.6", "11.8", "12", "11.6", "3"],
         ans: "C",
-        exp: "Solution<br>The average salary of each worker in a factory is Rs. 90. The average salary of 16 workers is Rs. 1185 and the average salary of the rest is Rs. 60. How many workers does the factory have?<br>Total salary of 16 = 16 × 1185 = 18960<br>Let total workers = x, Total salary = 90x, Remaining salary = 60(x - 16)<br>90x = 18960 + 60x - 960<br>30x = 18000 => x = 600<br>? = 600"
+        exp: "Solution<br>The weight of Amit, Neha and Rohit in 2012 was in the ratio 4:5:6. In 2018 weight of Amit became 200%, weight of Neha increased by 40% and the weight of Rohit became 150% as compared to their weight in 2012. If the average increase in their weight is 12 kg, what is the difference between the weight of Amit in 2018 and the weight of Neha in 2012?<br>In 2012: Amit = 4k, Neha = 5k, Rohit = 6k<br>In 2018: Amit = 8k, Neha = 7k, Rohit = 9k<br>Increase = 4k, 2k, 3k<br>Average increase = 9k / 3 = 3k = 12 => k = 4<br>Difference = |8k - 5k| = 3k = 12 kg<br>? = 12"
       },
       {
-        q: "There are five students in a class, S1, S2, S3, S4 and S5. Average score of the class in the unit test is 43.2, while average score of S1 and S3 together is 10 more than average score of S2 and S4 together. Score of S3 is 50% more than S5, while the score of S2 is 17 less than S5. Score of S4 is 25 more than S5. Find the marks obtained by S1.",
-        opt: ["48", "46", "42", "58", "36"],
+        q: "Out of the total number of students in a class, 60% are boys and the remaining 24 are girls and the average weight of a class is 54 kg. If the average weight of boys in the class is 68 kg, then find the average weight of girls in the class?",
+        opt: ["31", "25", "29", "33", "37"],
+        ans: "D",
+        exp: "Solution<br>Out of the total number of students in a class, 60% are boys and the remaining 24 are girls and the average weight of a class is 54 kg. If the average weight of boys in the class is 68 kg, then find the average weight of girls in the class?<br>girls = 24, boys = 24 × 3/2 = 36, Total = 60<br>Let average weight of girls = x<br>60 × 54 = 36 × 68 + 24 × x<br>3240 = 2448 + 24x<br>24x = 792 => x = 33 kg<br>? = 33"
+      },
+      {
+        q: "An exam was conducted in a state over 172 schools. The average number of students per school was found to be 1406. However, it was later realized that in one school, the number of students was counted as 1382 instead of 1334. What was the correct average number of students per school (upto two decimals)?",
+        opt: ["1405.41", "1405.72", "1406.03", "1404.12", "1407.00"],
         ans: "B",
-        exp: "Solution<br>There are five students in a class, S1, S2, S3, S4 and S5. Average score of the class in the unit test is 43.2, while average score of S1 and S3 together is 10 more than average score of S2 and S4 together. Score of S3 is 50% more than S5, while the score of S2 is 17 less than S5. Score of S4 is 25 more than S5. Find the marks obtained by S1.<br>S3 = 1.5 × S5, S2 = S5 - 17, S4 = S5 + 25<br>S1 + S3 = S2 + S4 + 20<br>Total = 43.2 × 5 = 216<br>Total = 2(S2 + S4) + 20 + S5 = 2(2 × S5 - 17 + 25) + 20 + S5<br>5 × S5 + 36 = 216 => S5 = 36<br>S3 = 54, S2 = 19, S4 = 61<br>S1 = 19 + 61 + 20 - 54 = 46<br>? = 46"
+        exp: "Solution<br>An exam was conducted in a state over 172 schools. The average number of students per school was found to be 1406. However, it was later realized that in one school, the number of students was counted as 1382 instead of 1334. What was the correct average number of students per school (upto two decimals)?<br>Extra counted = |1382 - 1334| = 48<br>Decrease in average = 48 / 172 = 0.279<br>Correct average = 1406 - 0.279 = 1405.72<br>? = 1405.72"
       },
       {
-        q: "Average of a set of 7 consecutive even numbers is 82. Average of another set of 7 consecutive odd numbers is 85. Find the product of smallest even number of the first set and largest odd number of the second set.",
-        opt: ["6004", "6916", "6952", "6970", "8008"],
-        ans: "B",
-        exp: "Solution<br>Average of a set of 7 consecutive even numbers is 82. Average of another set of 7 consecutive odd numbers is 85. Find the product of smallest even number of the first set and largest odd number of the second set.<br>Even: first = 82 - 6 = 76, last = 82 + 6 = 88<br>Odd: first = 85 - 6 = 79, last = 85 + 6 = 91<br>Product = 76 × 91 = 6916<br>? = 6916"
+        q: "Average age of a team of 13 players is 21 years. Average age of the team is increased by 3 years when the age of the coach and manager is added. If the difference between the ages of the coach and manager is 21 years, then find the age of the coach.",
+        opt: ["33", "54", "60", "Can't be determined", "27"],
+        ans: "D",
+        exp: "Solution<br>Average age of a team of 13 players is 21 years. Average age of the team is increased by 3 years when the age of the coach and manager is added. If the difference between the ages of the coach and manager is 21 years, then find the age of the coach.<br>Sum of 13 players = 21 × 13 = 273<br>Sum with coach and manager = 24 × 15 = 360<br>Sum of coach and manager = 87 years<br>coach = either (87 + 21) / 2 = 54 or (87 - 21) / 2 = 33<br>So it cannot be determined<br>? = Can't be determined"
       },
       {
-        q: "A sequence P, contains six consecutive even numbers whose average of lowest and highest term is 121. There is another sequence Q, containing 5 consecutive odd numbers whose lowest term is 10 less than the 50% of sum of second lowest and third lowest number of sequence P. Find (2T1 + 3T3 - T5), where Tn is the nth term of sequence Q?",
-        opt: ["440", "400", "430", "470", "415"],
-        ans: "A",
-        exp: "Solution<br>A sequence P, contains six consecutive even numbers whose average of lowest and highest term is 121. There is another sequence Q, containing 5 consecutive odd numbers whose lowest term is 10 less than the 50% of sum of second lowest and third lowest number of sequence P. Find (2T1 + 3T3 - T5), where Tn is the nth term of sequence Q?<br>Let P terms = 2n-4, 2n-2, 2n, 2n+2, 2n+4, 2n+6<br>[(2n-4)+(2n+6)]/2 = 121 => 2n = 120<br>P = 116, 118, 120, 122, 124, 126<br>Lowest term of Q = 50% of (118 + 120) - 10 = 109<br>Q = 109, 111, 113, 115, 117<br>Required = (2 × 109 + 3 × 113 - 1 × 117) = 440<br>? = 440"
+        q: "Income of P is Rs. 2000 more than Q, while combined income of P and R together is 33000. Combined income of P and Q is 100% more than R. Find the average income of P, Q and R together?",
+        opt: ["14500", "15500", "17000", "16000", "18500"],
+        ans: "D",
+        exp: "Solution<br>Income of P is Rs. 2000 more than Q, while combined income of P and R together is 33000. Combined income of P and Q is 100% more than R. Find the average income of P, Q and R together?<br>P - Q = 2000 ...(1)<br>P + Q = 2R ...(2)<br>P + R = 33000 ...(3)<br>From (1) and (2): 2P = 2000 + 2R<br>2000 + 2R + 2R = 66000 => 4R = 64000 => R = 16000<br>Average = (2R + R) / 3 = 48000 / 3 = 16000<br>? = 16000"
       },
       {
-        q: "The average age of a group of 32 friends is 34 years. The average age of the first 9 friends is 33 years and the average age of the last 19 friends is 33 years. What will be the average age of the 10th to 13th friends?",
-        opt: ["29", "41", "49", "53", "39"],
-        ans: "B",
-        exp: "Solution<br>The average age of a group of 32 friends is 34 years. The average age of the first 9 friends is 33 years and the average age of the last 19 friends is 33 years. What will be the average age of the 10th to 13th friends?<br>Sum 32 = 34 × 32 = 1088<br>Sum first 9 = 33 × 9 = 297<br>Sum last 19 = 33 × 19 = 627<br>Sum 10th to 13th = 1088 - 297 - 627 = 164<br>Average = 164 / 4 = 41 years<br>? = 41"
-      },
-      {
-        q: "Total age of 28 girls is 466. The average of first 19 of them is 16 years then find average age of others girls?",
-        opt: ["19", "13.5", "18", "16", "22"],
+        q: "Ratio of the height of A and B is 9:5 and the height of C is 80% of the height of A. If the difference between the height of B and C is 33 cm, then find the average height of A and B together?",
+        opt: ["113", "93", "105", "121", "85"],
         ans: "C",
-        exp: "Solution<br>Total age of 28 girls is 466. The average of first 19 of them is 16 years then find average age of others girls?<br>Total age of first 19 = 19 × 16 = 304<br>Total age of others = 466 - 304 = 162<br>Average age of 9 girls = 162 / 9 = 18<br>? = 18"
-      },
-      {
-        q: "In a zoo, there are 44 deer and the average weight of the deer is 19 kg. If the average weight of 16 deer in the zoo is 24 kg while the average weight of 16 other deer in the zoo is 14 kg, then find the average weight of the remaining 12 deer in the zoo?",
-        opt: ["25", "19", "24", "22", "21"],
-        ans: "B",
-        exp: "Solution<br>In a zoo, there are 44 deer and the average weight of the deer is 19 kg. If the average weight of 16 deer in the zoo is 24 kg while the average weight of 16 other deer in the zoo is 14 kg, then find the average weight of the remaining 12 deer in the zoo?<br>Total weight = 44 × 19 = 836<br>Let average of 12 deer = x<br>16 × 24 + 16 × 14 + 12x = 836<br>12x = 836 - 608 = 228 => x = 19 kg<br>? = 19"
-      },
-      {
-        q: "The average weight of the team is 53 kg. If one player is absent from the team, then average weight of the team is decreased by 3 kg and the total number of players in the team is 36, then find the weight of the absent player?",
-        opt: ["158", "166", "172", "142", "164"],
-        ans: "A",
-        exp: "Solution<br>The average weight of the team is 53 kg. If one player is absent from the team, then average weight of the team is decreased by 3 kg and the total number of players in the team is 36, then find the weight of the absent player?<br>Total weight of 36 players = 36 × 53 = 1908 kg<br>Total weight of 35 players = 35 × 50 = 1750 kg<br>Weight of absent player = 1908 - 1750 = 158 kg<br>? = 158"
-      },
-      {
-        q: "Rohan calculates the average of his marks in five subjects. By mistake he writes number of two subjects as reverse of original marks thereby increasing the average by 27 marks. If the incorrect numbers are in the ratio 13:10, what is the sum of the original numbers? (The marks awarded are from 01, 02 ... to 99)",
-        opt: ["33", "16", "29", "30", "26"],
-        ans: "E",
-        exp: "Solution<br>Rohan calculates the average of his marks in five subjects. By mistake he writes number of two subjects as reverse of original marks thereby increasing the average by 27 marks. If the incorrect numbers are in the ratio 13:10, what is the sum of the original numbers? (The marks awarded are from 01, 02 ... to 99)<br>Let numbers be \"ab\" and \"xy\", reversed \"ba\" and \"yx\"<br>Total increase = 5 × 27 = 135<br>(ba + yx) - (ab + xy) = 9[(b - a) + (y - x)] = 135<br>(b - a) + (y - x) = 15<br>Incorrect numbers are in ratio 13:10, the only combination that fits is 91 and 70<br>Original numbers are 19 and 07<br>Sum = 19 + 7 = 26<br>? = 26"
-      },
-      {
-        q: "Average weight of five persons is 50 kg. If the average weight of the first two persons is 60 kg and the average weight of the last two persons is 46 kg, then find the weight of the third person?",
-        opt: ["38", "47", "32", "53", "50"],
-        ans: "A",
-        exp: "Solution<br>Average weight of five persons is 50 kg. If the average weight of the first two persons is 60 kg and the average weight of the last two persons is 46 kg, then find the weight of the third person?<br>Weight of third person = x<br>50 × 5 = 2 × 60 + 2 × 46 + x<br>250 = 212 + x<br>x = 38 kg<br>? = 38"
+        exp: "Solution<br>Ratio of the height of A and B is 9:5 and the height of C is 80% of the height of A. If the difference between the height of B and C is 33 cm, then find the average height of A and B together?<br>A = 9x, B = 5x, C = 9x × 80/100 = 7.2x<br>C - B: 2.2x = 33 => x = 15 cm<br>A = 135 cm, B = 75 cm<br>Average = (135 + 75) / 2 = 105 cm<br>? = 105"
       }
     ]
   }
