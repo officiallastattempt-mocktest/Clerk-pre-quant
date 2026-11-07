@@ -312,64 +312,64 @@ const QUIZ_SETS = [
     solutionExp: "",
     questions: [
       {
-        q: "The number of boys is 80% less than the number of girls in a batch. If the difference between the number of boys and girls is 48, then find the total number of candidates (boys and girls) in the batch.",
-        opt: ["30", "72", "120", "96", "60"],
-        ans: "B",
-        exp: "Solution<br>The number of boys is 80% less than the number of girls in a batch. If the difference between the number of boys and girls is 48, then find the total number of candidates (boys and girls) in the batch.<br>Let girls = x<br>boys = x - 80% of x = 0.2x<br>Difference = x - 0.2x = 48<br>0.8x = 48 => x = 60<br>boys = 0.2 × 60 = 12<br>Total = 12 + 60 = 72<br>? = 72"
+        q: "Fruit pulp is processed to extract jam. How much fruit pulp must be processed to yield 20 kg of pure jam, if fruit pulp contains 60% water, and the jam obtained from this fruit pulp contains 20% water?",
+        opt: ["37", "36", "40", "43", "39"],
+        ans: "C",
+        exp: "Solution<br>Fruit pulp is processed to extract jam. How much fruit pulp must be processed to yield 20 kg of pure jam, if fruit pulp contains 60% water, and the jam obtained from this fruit pulp contains 20% water?<br>Fruit pulp has 40% solids, jam has 80% solids. Solids remain same.<br>20 kg jam has 16 kg solids<br>fruit pulp needed = 16/0.4 = 40 kg<br>? = 40"
       },
       {
-        q: "There are two slabs of income tax, 10% tax for income up to 3 lakh and 12.5% for income above 3 lakh. Arun tried to evade tax by hiding some of the income, to fall in the 10% tax slab. The amount hid by Arun is 1/5 of the original taxable income. If Arun paid Rs. 27760 as tax, what is the original amount of tax he had to pay?",
-        opt: ["34875", "35875", "36375", "32875", "34375"],
-        ans: "B",
-        exp: "Solution<br>There are two slabs of income tax, 10% tax for income up to 3 lakh and 12.5% for income above 3 lakh. Arun tried to evade tax by hiding some of the income, to fall in the 10% tax slab. The amount hid by Arun is 1/5 of the original taxable income. If Arun paid Rs. 27760 as tax, what is the original amount of tax he had to pay?<br>Declared income = 27760 × 100 ÷ 10 = 277600<br>Declared = 4/5 of original => original income = 347000<br>Tax = 10% of 300000 + 12.5% of 47000 = 30000 + 5875 = 35875<br>? = 35875"
+        q: "In an election, candidate P got 45% of the total valid votes. If 40% of the total votes were declared as invalid and the total number of votes is 250000, find the number of valid votes polled in favour of candidate P.",
+        opt: ["67500", "67100", "66900", "67800", "67300"],
+        ans: "A",
+        exp: "Solution<br>In an election, candidate P got 45% of the total valid votes. If 40% of the total votes were declared as invalid and the total number of votes is 250000, find the number of valid votes polled in favour of candidate P.<br>Total invalid votes = 40% of 250000 = 100000<br>Total valid votes = 250000 - 100000 = 150000<br>Valid votes for P = 45% of 150000 = 45/100 × 150000 = 67500<br>? = 67500"
       },
       {
-        q: "Gopal spends 18% of his monthly salary on rent and out of the remaining salary, he spends 25% on entertainment, saves 30% and spends Rs. 14391 on food. Find the annual income of Gopal.",
-        opt: ["516000", "468000", "480000", "426000", "486000"],
+        q: "A student scores 30% marks and fails by 210 marks, while another student scores 48% and fails by 21 marks. What are the minimum passing marks?",
+        opt: ["535", "525", "545", "465", "555"],
         ans: "B",
-        exp: "Solution<br>Gopal spends 18% of his monthly salary on rent and out of the remaining salary, he spends 25% on entertainment, saves 30% and spends Rs. 14391 on food. Find the annual income of Gopal.<br>Let monthly salary = 100x<br>Rent = 18x, Remaining = 82x<br>Entertainment = 82x × 25/100 = 20.5x<br>Savings = 82x × 30/100 = 24.6x<br>Food = 82x - 20.5x - 24.6x = 36.9x = 14391<br>Monthly income = 14391 × 100/36.9 = Rs. 39000<br>Annual income = 39000 × 12 = Rs. 468000<br>? = 468000"
+        exp: "Solution<br>A student scores 30% marks and fails by 210 marks, while another student scores 48% and fails by 21 marks. What are the minimum passing marks?<br>The percentage difference is 48 - 30 = 18%<br>The marks difference is 210 - 21 = 189<br>18% = 189, so 100% = 189 × 100/18 = 1050<br>Passing marks = 30% of 1050 + 210 = 525<br>? = 525"
       },
       {
-        q: "In a factory there are three types of machines M1, M2 and M3 which produce 20%, 30% and 50% of the total products respectively. M1, M2 and M3 produce 2%, 2% and 2% defective products, respectively. Find the percentage of non-defective products?",
-        opt: ["95%", "93%", "92%", "98%", "96%"],
+        q: "Vikram spends 25% of an amount of money on an insurance policy, 33% on food, 18% on children's education and 17% on recreation. He deposits the remaining amount of Rs. 595 in bank. How much total amount did he spend on all heads except children's education?",
+        opt: ["6325", "6425", "6375", "6875", "6525"],
+        ans: "C",
+        exp: "Solution<br>Vikram spends 25% of an amount of money on an insurance policy, 33% on food, 18% on children's education and 17% on recreation. He deposits the remaining amount of Rs. 595 in bank. How much total amount did he spend on all heads except children's education?<br>Savings % = 100 - (25+33+18+17) = 7%<br>7% = 595 => Total = 595 × 100/7 = 8500<br>All heads except children's education = 93 - 18 = 75% of 8500 = Rs. 6375<br>? = 6375"
+      },
+      {
+        q: "The monthly salary of A is 10% less than the monthly salary of B. If the savings of A is Rs. 27360 which is 40% of the monthly salary of A, then find the monthly salary of B.",
+        opt: ["85000", "69000", "83000", "76000", "80000"],
         ans: "D",
-        exp: "Solution<br>In a factory there are three types of machines M1, M2 and M3 which produce 20%, 30% and 50% of the total products respectively. M1, M2 and M3 produce 2%, 2% and 2% defective products, respectively. Find the percentage of non-defective products?<br>Defective = 20% × 2% + 30% × 2% + 50% × 2%<br>= 0.4 + 0.6 + 1 = 2%<br>Non-defective = 100 - 2 = 98%<br>? = 98%"
+        exp: "Solution<br>The monthly salary of A is 10% less than the monthly salary of B. If the savings of A is Rs. 27360 which is 40% of the monthly salary of A, then find the monthly salary of B.<br>Salary of A = 27360 × 100 ÷ 40 = 68400<br>Salary of B = 68400 × 100 ÷ 90 = 76000<br>? = 76000"
       },
       {
-        q: "A box has 60 pink balls, 80 orange balls and 80 violet balls, 20% of pink balls and 60% of orange balls are taken away. Then, percentage of violet balls at present is",
-        opt: ["60", "35", "45", "50", "40"],
+        q: "In an examination Nisha got 20% marks and failed by 40 marks. If she had got 45% marks she would have secured 30 marks more than the pass marks. Find the pass marks.",
+        opt: ["101", "91", "81", "96", "121"],
         ans: "D",
-        exp: "Solution<br>A box has 60 pink balls, 80 orange balls and 80 violet balls, 20% of pink balls and 60% of orange balls are taken away. Then, percentage of violet balls at present is<br>Remaining pink = 48, Remaining orange = 32, violet = 80<br>Total remaining = 48 + 32 + 80 = 160<br>% violet = 80/160 × 100 = 50%<br>? = 50"
+        exp: "Solution<br>In an examination Nisha got 20% marks and failed by 40 marks. If she had got 45% marks she would have secured 30 marks more than the pass marks. Find the pass marks.<br>Let total = x. 20% of x + 40 = 45% of x - 30<br>25% of x = 70 => x = 280<br>Pass marks = 20% of 280 + 40 = 96<br>? = 96"
       },
       {
-        q: "A caretaker of a zoo counted the heads of the animals in a zoo and found it to be 150. When he counted the legs of the animals he found it to be 422. If the zoo had either hornbills or jackals, how many hornbills were there in the zoo? (In the zoo, each jackal had four legs and each hornbill had two legs)",
-        opt: ["87", "93", "89", "83", "79"],
-        ans: "C",
-        exp: "Solution<br>A caretaker of a zoo counted the heads of the animals in a zoo and found it to be 150. When he counted the legs of the animals he found it to be 422. If the zoo had either hornbills or jackals, how many hornbills were there in the zoo? (In the zoo, each jackal had four legs and each hornbill had two legs)<br>Let jackals = x, hornbills = 150 - x<br>4x + 2(150 - x) = 422<br>4x + 300 - 2x = 422<br>2x = 122 => x = 61<br>hornbills = 150 - 61 = 89<br>? = 89"
+        q: "Raman spends 25% of his monthly allowance on tuition fees, 25% on room rent, and half of the remaining on food. He spends some amount on medicine and saves Rs. 585, which is 45% of the remaining amount after spending on the tuition fees, room rent and food. How much (in Rs.) does he spend on medicine?",
+        opt: ["715", "465", "865", "815", "1115"],
+        ans: "A",
+        exp: "Solution<br>Raman spends 25% of his monthly allowance on tuition fees, 25% on room rent, and half of the remaining on food. He spends some amount on medicine and saves Rs. 585, which is 45% of the remaining amount after spending on the tuition fees, room rent and food. How much (in Rs.) does he spend on medicine?<br>Let allowance = 100m. After tuition and rent: 50m; food = 25m; remaining = 25m<br>Savings = 45% of 25m = 11.25m = 585 => m = 52<br>Medicine = 55% of 25m = 13.75m = 715<br>? = 715"
       },
       {
-        q: "A student gets 32% marks and fails by 16 marks. Another student gets 40% marks and gets 16 marks more than the passing marks. Find the passing percentage in the examination?",
-        opt: ["21", "36", "51", "46", "26"],
+        q: "An alloy contains tin and lead in the ratio 4:5 and another alloy contains tin and lead in the ratio 5:3. If 40 kg of the first alloy and 20 kg of the second alloy are melted together, then the ratio of tin and lead in the resulting alloy is",
+        opt: ["109:108", "109:107", "107:109", "109:106", "108:107"],
         ans: "B",
-        exp: "Solution<br>A student gets 32% marks and fails by 16 marks. Another student gets 40% marks and gets 16 marks more than the passing marks. Find the passing percentage in the examination?<br>Let the maximum marks be x<br>32% of x + 16 = 40% of x - 16<br>8% of x = 16 + 16 = 32<br>x = 32 × 100/8 = 400<br>Passing marks = 32% of 400 + 16 = 144<br>Passing % = 144/400 × 100 = 36%<br>? = 36"
+        exp: "Solution<br>An alloy contains tin and lead in the ratio 4:5 and another alloy contains tin and lead in the ratio 5:3. If 40 kg of the first alloy and 20 kg of the second alloy are melted together, then the ratio of tin and lead in the resulting alloy is<br>tin = 40 × 4/9 + 20 × 5/8<br>lead = 40 × 5/9 + 20 × 3/8<br>With common denominator 72: tin = 2180/72, lead = 2140/72<br>Ratio = 2180:2140 = 109:107<br>? = 109:107"
       },
       {
-        q: "In an election only two candidates M and N contested. 20% of the voters did not vote and 6210 votes were declared as invalid. The winner, M got 12150 votes more than his opponent thus he secured 51% votes of the total voters on the voter list. Percentage votes of the loser candidate, N out of the total voters on the voter list is?",
-        opt: ["8", "1", "6", "10", "9"],
+        q: "Kabir smashes 64 runs against New Zealand in 13 balls. If he scored only in boundaries (fours and sixes), find the percent of runs he scored by hitting fours.",
+        opt: ["39.25", "42.75", "43.75", "46.75", "51.25"],
         ans: "C",
-        exp: "Solution<br>In an election only two candidates M and N contested. 20% of the voters did not vote and 6210 votes were declared as invalid. The winner, M got 12150 votes more than his opponent thus he secured 51% votes of the total voters on the voter list. Percentage votes of the loser candidate, N out of the total voters on the voter list is?<br>Let total voters = x<br>51/100 x + 51/100 x - 12150 = 80/100 x - 6210<br>22/100 x = 5940 => x = 27000<br>Votes of loser = 51% of 27000 - 12150 = 13770 - 12150 = 1620<br>% = 1620/27000 × 100 = 6%<br>? = 6"
+        exp: "Solution<br>Kabir smashes 64 runs against New Zealand in 13 balls. If he scored only in boundaries (fours and sixes), find the percent of runs he scored by hitting fours.<br>Let fours = a, sixes = b: a + b = 13, 4a + 6b = 64<br>4 × 13 + 2b = 64 => b = 6, a = 7<br>Runs from fours = 28<br>28 ÷ 64 × 100 = 43.75%<br>? = 43.75"
       },
       {
-        q: "In a class, there are 40 students and 9 teachers, chocolates got by each student is equal to 15% of the total number of students and chocolates got by each teacher is equal to 20% of the total number of students. How many chocolates were there?",
-        opt: ["272", "282", "312", "352", "302"],
+        q: "In a basket there are some mangoes. 33 1/3% mangoes were stolen by a thief, 25% of the remaining were damaged and the rest mangoes were good. If the number of good mangoes was 110, then find the total number of mangoes in the basket.",
+        opt: ["290", "190", "220", "140", "280"],
         ans: "C",
-        exp: "Solution<br>In a class, there are 40 students and 9 teachers, chocolates got by each student is equal to 15% of the total number of students and chocolates got by each teacher is equal to 20% of the total number of students. How many chocolates were there?<br>Each student gets = 15% of 40 = 6<br>Each teacher gets = 20% of 40 = 8<br>Total = 40 × 6 + 9 × 8<br>= 240 + 72 = 312<br>? = 312"
-      },
-      {
-        q: "Meena scored 59 marks in Physics. He scored 55% marks in Chemistry and X marks in Biology. The maximum marks for each subject is 100. The overall percentage of marks obtained by Meena in all three subjects together is 63%. How many marks did Meena score in Biology?",
-        opt: ["63", "75", "59", "55", "67"],
-        ans: "B",
-        exp: "Solution<br>Meena scored 59 marks in Physics. He scored 55% marks in Chemistry and X marks in Biology. The maximum marks for each subject is 100. The overall percentage of marks obtained by Meena in all three subjects together is 63%. How many marks did Meena score in Biology?<br>Total max = 300, 63% of 300 = 189<br>Chemistry = 55% of 100 = 55<br>59 + 55 + Biology = 189<br>Biology = 189 - 114 = 75<br>? = 75"
+        exp: "Solution<br>In a basket there are some mangoes. 33 1/3% mangoes were stolen by a thief, 25% of the remaining were damaged and the rest mangoes were good. If the number of good mangoes was 110, then find the total number of mangoes in the basket.<br>Let total = x<br>Stolen = 33 1/3% = 1/3, Remaining = 2/3<br>Good = 75% of remaining<br>Good = 2/3 × 75/100 × x = 1/2 x = 110<br>x = 110 × 2/1 = 220<br>? = 220"
       }
     ]
   }
