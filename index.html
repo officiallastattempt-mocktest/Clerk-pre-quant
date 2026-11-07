@@ -157,7 +157,7 @@
           headers: { "Accept": "application/vnd.github+json" }
         });
         if (!res.ok) {
-          throw new Error(res.status === 403 ? "GitHub API rate limit reached. Try again shortly." : `Failed to load (status ${res.status})`);
+          throw new Error(res.status === 403 ? "We're experiencing high demand right now. Please try again in an hour. Thank you for your patience! " : `Failed to load (status ${res.status})`);
         }
         const items = await res.json();
 
