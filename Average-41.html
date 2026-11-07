@@ -312,64 +312,64 @@ const QUIZ_SETS = [
     solutionExp: "",
     questions: [
       {
-        q: "An exam was conducted in a state over 157 stores. The average number of visitors per store was found to be 1480. However, it was later realized that in one store, the number of visitors was counted as 1905 instead of 1730. What was the correct average number of visitors per store (upto two decimals)?",
-        opt: ["1478.89", "1479.53", "1477.29", "1480.49", "1478.58"],
-        ans: "A",
-        exp: "Solution<br>An exam was conducted in a state over 157 stores. The average number of visitors per store was found to be 1480. However, it was later realized that in one store, the number of visitors was counted as 1905 instead of 1730. What was the correct average number of visitors per store (upto two decimals)?<br>Extra counted = |1905 - 1730| = 175<br>Decrease in average = 175 / 157 = 1.115<br>Correct average = 1480 - 1.115 = 1478.89<br>? = 1478.89"
+        q: "The average weight of the group is 58 kg. If one worker is absent from the group, then average weight of the group is decreased by 4 kg and the total number of workers in the group is 20, then find the weight of the absent worker?",
+        opt: ["142", "124", "136", "134", "122"],
+        ans: "D",
+        exp: "Solution<br>The average weight of the group is 58 kg. If one worker is absent from the group, then average weight of the group is decreased by 4 kg and the total number of workers in the group is 20, then find the weight of the absent worker?<br>Total weight of 20 workers = 20 × 58 = 1160 kg<br>Total weight of 19 workers = 19 × 54 = 1026 kg<br>Weight of absent worker = 1160 - 1026 = 134 kg<br>? = 134"
       },
       {
-        q: "The average marks of 25 students in class is 48. While checking two errors were noticed, the marks of one student were recorded 51 more than the actual marks and the marks of another student were recorded 23 less than the actual marks. What is correct average?",
-        opt: ["46.88", "44.88", "43.78", "46.18", "47.58"],
-        ans: "A",
-        exp: "Solution<br>The average marks of 25 students in class is 48. While checking two errors were noticed, the marks of one student were recorded 51 more than the actual marks and the marks of another student were recorded 23 less than the actual marks. What is correct average?<br>Total marks of 25 students = 48 × 25 = 1200<br>After correction total marks = 1200 - 51 + 23 = 1172<br>Correct average = 1172 / 25 = 46.88<br>? = 46.88"
-      },
-      {
-        q: "Average age of 60 students of a class is 15 years. When 5 new students are admitted the average is decreased by 0.1 year. Find average age of the new students?",
-        opt: ["10.7", "9.7", "13.7", "15.7", "8.7"],
+        q: "The average age of 6 children of a household is 13 years. If the age of their mother and father is also added, then the average age of whole household becomes 24 years. If the age of the father is 10 years more than that of the age of the mother, then find the age of the father?",
+        opt: ["56", "60", "62", "66", "64"],
         ans: "C",
-        exp: "Solution<br>Average age of 60 students of a class is 15 years. When 5 new students are admitted the average is decreased by 0.1 year. Find average age of the new students?<br>Total age 60 students = 60 × 15 = 900<br>Total age 65 students = 65 × (15 - 0.1) = 65 × 14.9 = 968.5<br>Total age of 5 students = 968.5 - 900 = 68.5<br>Average = 68.5 / 5 = 13.7<br>? = 13.7"
+        exp: "Solution<br>The average age of 6 children of a household is 13 years. If the age of their mother and father is also added, then the average age of whole household becomes 24 years. If the age of the father is 10 years more than that of the age of the mother, then find the age of the father?<br>Sum of children = 6 × 13 = 78<br>Let father = F, mother = M<br>78 + F + M = 24 × 8 = 192 => F + M = 114 ...(i)<br>F - M = 10 ...(ii)<br>Solving: F = 62, M = 52<br>? = 62"
       },
       {
-        q: "In company Sunrise Corp, the best performing team won bonus. The captain of the best performing team who got highest bonus of 25% of the total bonus was equal to 5 times of what each of the rest of his team members got. Find the team size who won bonus.",
-        opt: ["10", "11", "20", "17", "16"],
+        q: "Average age of 29 players in a team is 15 years. The age of their coach is 39 years, what is the average age of the players and coach combined?",
+        opt: ["15.8", "16.6", "15.6", "16.3", "14.6"],
+        ans: "A",
+        exp: "Solution<br>Average age of 29 players in a team is 15 years. The age of their coach is 39 years, what is the average age of the players and coach combined?<br>Total age of 29 players = 29 × 15 = 435<br>Total age when coach included = 435 + 39 = 474<br>Average = 474 / 30 = 15.8<br>? = 15.8"
+      },
+      {
+        q: "The weight of A, B and C is recorded and their recorded weight is in the ratio 9:5:4 respectively. The average recorded weight of all three came out to be 48kg. Later it was noticed that weight of A was written 20% more, weight of B was written 16.66% less and weight of C was written 17kg more. What is the original average weight of three friends?",
+        opt: ["41", "35", "48", "44", "46"],
+        ans: "A",
+        exp: "Solution<br>The weight of A, B and C is recorded and their recorded weight is in the ratio 9:5:4 respectively. The average recorded weight of all three came out to be 48kg. Later it was noticed that weight of A was written 20% more, weight of B was written 16.66% less and weight of C was written 17kg more. What is the original average weight of three friends?<br>Recorded A:B:C = 9k:5k:4k, Average = 18k/3 = 48 => k = 8<br>Recorded A = 72, B = 40, C = 32<br>A original = 5/6 × 72 = 60<br>B original = 6/5 × 40 = 48<br>C original = 32 - 17 = 15<br>Original average = (60 + 48 + 15) / 3 = 123 / 3 = 41<br>? = 41"
+      },
+      {
+        q: "The average marks of 80 students in a batch is 68. The average marks of males and females is 69 and 64 respectively. Then find number of males of the batch?",
+        opt: ["62", "64", "52", "66", "70"],
+        ans: "B",
+        exp: "Solution<br>The average marks of 80 students in a batch is 68. The average marks of males and females is 69 and 64 respectively. Then find number of males of the batch?<br>Total marks of 80 students = 68 × 80 = 5440<br>Let males = x and females = 80 - x<br>69x + 64(80 - x) = 5440<br>69x + 5120 - 64x = 5440 => 5x = 320 => x = 64<br>males = 64, females = 16<br>? = 64"
+      },
+      {
+        q: "In a joint family the average age of grandparents is 75 years, the average age of parents is 39 years and age of grand child is 15 years. What is the average age of the family?",
+        opt: ["49.6", "48.6", "53.6", "48.1", "45.1"],
+        ans: "B",
+        exp: "Solution<br>In a joint family the average age of grandparents is 75 years, the average age of parents is 39 years and age of grand child is 15 years. What is the average age of the family?<br>Total age of grandparents = 75 × 2 = 150<br>Total age of parents = 39 × 2 = 78<br>Total age of 1 grand child = 15<br>Total age of 5 members = 150 + 78 + 15 = 243<br>Average age = 243 / 5 = 48.6<br>? = 48.6"
+      },
+      {
+        q: "Total marks obtained by a student in Math, Science and English together is 98 more than marks obtained by him in English. What are the average marks obtained by him in other two subjects?",
+        opt: ["59", "49", "45", "47", "57"],
+        ans: "B",
+        exp: "Solution<br>Total marks obtained by a student in Math, Science and English together is 98 more than marks obtained by him in English. What are the average marks obtained by him in other two subjects?<br>Let marks in English = x<br>Sum of other 2 subjects + x = x + 98<br>Sum of other 2 subjects = 98<br>Average = 98 / 2 = 49<br>? = 49"
+      },
+      {
+        q: "Average weight of 51 players of a team is 49. 3 new players joined the team and average weight of the team increased by 2 Kg. Find the average weight of the 3 new players.",
+        opt: ["85", "87", "83.5", "84", "85.5"],
+        ans: "A",
+        exp: "Solution<br>Average weight of 51 players of a team is 49. 3 new players joined the team and average weight of the team increased by 2 Kg. Find the average weight of the 3 new players.<br>Sum of 51 = 51 × 49 = 2499<br>Sum of 54 = 54 × 51 = 2754<br>Sum of 3 new = 2754 - 2499 = 255<br>Average = 255 / 3 = 85 kg<br>? = 85"
+      },
+      {
+        q: "Total expense of a mess are partly fixed and partly varying linearly with the number of members. The average expense per member is Rs. 530 when there are 25 members and Rs. 490 when there are 50 members. What is average expense per member when there are 200 members?",
+        opt: ["400", "500", "430", "490", "460"],
         ans: "E",
-        exp: "Solution<br>In company Sunrise Corp, the best performing team won bonus. The captain of the best performing team who got highest bonus of 25% of the total bonus was equal to 5 times of what each of the rest of his team members got. Find the team size who won bonus.<br>Let total bonus = 100x, total members = n<br>Captain = 25x, rest of the team = 75x<br>25x = 5 × (75x)/(n - 1)<br>n - 1 = 5 × 75 / 25 = 15<br>n = 16<br>? = 16"
+        exp: "Solution<br>Total expense of a mess are partly fixed and partly varying linearly with the number of members. The average expense per member is Rs. 530 when there are 25 members and Rs. 490 when there are 50 members. What is average expense per member when there are 200 members?<br>Let fixed = a, variable = b per member<br>25b + a = 25 × 530 = 13250<br>50b + a = 50 × 490 = 24500<br>Subtracting: 25b = 11250 => b = 450, a = 2000<br>Required average = (2000 + 200 × 450) / 200 = 460<br>? = 460"
       },
       {
-        q: "The average weight of five students P, Q, R, S and T is 38 kg. If the average weight of P and Q is 43 kg and the average weight of S and T is 42 kg, then find the weight of R?",
-        opt: ["12", "20", "28", "14", "15"],
-        ans: "B",
-        exp: "Solution<br>The average weight of five students P, Q, R, S and T is 38 kg. If the average weight of P and Q is 43 kg and the average weight of S and T is 42 kg, then find the weight of R?<br>2 × 43 + 2 × 42 + R = 38 × 5<br>86 + 84 + R = 190<br>R = 190 - 170 = 20 kg<br>? = 20"
-      },
-      {
-        q: "Out of the total number of students in a class, 58.33% are boys and the remaining 40 are girls and the average weight of a class is 52 kg. If the average weight of boys in the class is 67 kg, then find the average weight of girls in the class?",
-        opt: ["28", "31", "29", "34", "32"],
-        ans: "B",
-        exp: "Solution<br>Out of the total number of students in a class, 58.33% are boys and the remaining 40 are girls and the average weight of a class is 52 kg. If the average weight of boys in the class is 67 kg, then find the average weight of girls in the class?<br>girls = 40, boys = 40 × 7/5 = 56, Total = 96<br>Let average weight of girls = x<br>96 × 52 = 56 × 67 + 40 × x<br>4992 = 3752 + 40x<br>40x = 1240 => x = 31 kg<br>? = 31"
-      },
-      {
-        q: "Average weight of (x+12) men in a company is 70 kg and average weight of 64 women in a company is 62 kg. If the total weight of the company is 10408, then find the average weight of all the members of the company?",
-        opt: ["62.22", "66.72", "69.72", "65.22", "71.72"],
-        ans: "B",
-        exp: "Solution<br>Average weight of (x+12) men in a company is 70 kg and average weight of 64 women in a company is 62 kg. If the total weight of the company is 10408, then find the average weight of all the members of the company?<br>Total weight of men = 10408 - (62 × 64) = 6440<br>(x+12) × 70 = 6440 => x + 12 = 92<br>x = 80, number of men = 92<br>Average of all = 10408 / (92 + 64) = 10408 / 156 = 66.72 kg<br>? = 66.72"
-      },
-      {
-        q: "The average weight of the first 8 workers is 100 kg, the average weight of the last 12 workers is 10 more than the average weight of first 8 workers. The average weight of the rest 4 workers is 220 kg. Find the 50% of the average weight of all the workers.",
-        opt: ["61", "58", "62.5", "65.5", "70"],
+        q: "Average weight of certain students in a company is 27 kg. If the average weight of some men is 29 kg and the average weight of 19 women is 25 kg, then find the number of men in the company?",
+        opt: ["39", "14", "19", "29", "34"],
         ans: "C",
-        exp: "Solution<br>The average weight of the first 8 workers is 100 kg, the average weight of the last 12 workers is 10 more than the average weight of first 8 workers. The average weight of the rest 4 workers is 220 kg. Find the 50% of the average weight of all the workers.<br>First 8 = 100 × 8 = 800<br>Last 12 = 110 × 12 = 1320<br>Rest 4 = 220 × 4 = 880<br>Total = 3000<br>Average = 3000 / 24 = 125 kg<br>50% of 125 = 62.5 kg<br>? = 62.5"
-      },
-      {
-        q: "The average expenditure of a man for the first 3 months is Rs.12000 and for the next 9 months is Rs.10000. If he saves Rs.48000 in that year then find average monthly income?",
-        opt: ["14500", "13800", "14600", "14100", "14300"],
-        ans: "A",
-        exp: "Solution<br>The average expenditure of a man for the first 3 months is Rs.12000 and for the next 9 months is Rs.10000. If he saves Rs.48000 in that year then find average monthly income?<br>Total expenditure first 3 months = 12000 × 3 = 36000<br>Total expenditure last 9 months = 10000 × 9 = 90000<br>Total income in a year = 36000 + 90000 + 48000 = 174000<br>Average monthly income = 174000 / 12 = 14500<br>? = 14500"
-      },
-      {
-        q: "In Shanti Nagar Housing Society the monthly society expenditure has a fixed and a variable component, such that the variable component depends on the number of members in the society. If there are 32 members, then each member has to pay Rs. 245 and if there are 13 more members then each member has to pay Rs. 180. If each member pays Rs. 220, then how many members are there in the society?",
-        opt: ["36", "41", "56", "61", "31"],
-        ans: "A",
-        exp: "Solution<br>In Shanti Nagar Housing Society the monthly society expenditure has a fixed and a variable component, such that the variable component depends on the number of members in the society. If there are 32 members, then each member has to pay Rs. 245 and if there are 13 more members then each member has to pay Rs. 180. If each member pays Rs. 220, then how many members are there in the society?<br>Expenditure = F + V = F + k × (members)<br>245 × 32 = F + 32k => 7840 = F + 32k ...(i)<br>180 × 45 = F + 45k => 8100 = F + 45k ...(ii)<br>Solving: F = 7200, k = 20<br>220x = 7200 + 20x => 200x = 7200 => x = 36<br>? = 36"
+        exp: "Solution<br>Average weight of certain students in a company is 27 kg. If the average weight of some men is 29 kg and the average weight of 19 women is 25 kg, then find the number of men in the company?<br>Let total students = x, women = 19, men = x - 19<br>x × 27 = (x - 19) × 29 + 19 × 25<br>27x = 29x - 551 + 475<br>2x = 76 => x = 38<br>men = 38 - 19 = 19<br>? = 19"
       }
     ]
   }
